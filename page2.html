@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Melody's Phone Book</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body background="white">
+    <div class="container">
+        <h1>My Melody's Phone Book</h1>
+        <div class="profile">
+            <img id="avatar" src="OIP.jpg" alt="Avatar" class="avatar">
+            <span class="notification">1</span>
+        </div>
+        <div class="user-settings">
+            <div class="input-group">
+                <label for="username">Set the Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <button id="set-username">Set</button>
+            </div>
+            <div class="input-group">
+                <label for="profile-url">Set the profile image URL</label>
+                <input type="text" id="profile-url" placeholder="Enter Image URL">
+                <button id="set-profile-url">Set</button>
+            </div>
+        </div>
+        <div class="phone-book">
+            <h2>Phone Number List</h2>
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="tel" placeholder="Tel">
+                <button id="add">Add</button>
+                <button id="export">Export</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody id="phone-list">
+                    <!-- Dynamic list will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
